@@ -12,7 +12,7 @@
 
 > When you're building Flutter apps, it's kind of like working with Lego Technic.
 
-### The anatomy of a Flutter app (this tree or this design in Dart code)
+### The anatomy of a Flutter app (this tree or this design in DART code)
 
 1. Scaffold
     1. Appbar
