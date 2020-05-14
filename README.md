@@ -7,6 +7,7 @@
 - What is DART?
 - Hot reload? Cool!
 - Open source? Cool!
+- I wouldn't recommend building an iOS app without ever having tested it on a real iOS device
 
 > Flutter: it's simply a toolkit that makes it easy for developers to design beautiful interfaces for all sorts of screen sizes and devices, and it comes with a whole bunch of prebuilt widgets that make it easy to layout your app with a simple and flexible layout system.
 
@@ -24,3 +25,8 @@
             1. Text
             1. Image (network image)
 
+> Write code for Flutter with Flutter SDK, Android Studio, Windows 7+, Git e 10GB.
+
+### Android Studio
+
+- Always remember to put on Graphics option after create a simulator device, Hardware GLES 2.0 option.
