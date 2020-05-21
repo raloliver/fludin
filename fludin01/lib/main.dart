@@ -13,8 +13,7 @@ void main() {
         ),
         body: Center(
           child: Image(
-            image: NetworkImage(
-                'https://png.pngtree.com/png-clipart/20190118/ourlarge/pngtree-hand-drawn-corn-spike-corn-sweet-corn-crop-corn-png-image_445143.jpg'),
+            image: AssetImage('images/corn.png'),
           ),
         ),
       ),

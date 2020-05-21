@@ -21,7 +21,7 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - images/corn.png
+    - images/
   # fonts:
   #   - family: Schyler
   #     fonts:
