@@ -4,9 +4,21 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(
     MaterialApp(
-      home: Center(
-        child: Text('Hello Flutter'),
+      home: Scaffold(
+        backgroundColor: Colors.blueGrey,
+        appBar: AppBar(
+          centerTitle: true,
+          title: Text('I am rich!'),
+          backgroundColor: Colors.blueGrey[900],
+        ),
+        body: Center(
+          child: Image(
+            image: NetworkImage(
+                'https://png.pngtree.com/png-clipart/20190118/ourlarge/pngtree-hand-drawn-corn-spike-corn-sweet-corn-crop-corn-png-image_445143.jpg'),
+          ),
+        ),
       ),
+      debugShowCheckedModeBanner: false,
     ),
   );
 }
