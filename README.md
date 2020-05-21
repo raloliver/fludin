@@ -27,6 +27,11 @@
 
 > Write code for Flutter with Flutter SDK, Android Studio, Windows 7+, Git e 10GB.
 
-### Android Studio
+### Android Studio (Integrated Development Environment)
 
 - Always remember to put on Graphics option after create a simulator device, Hardware GLES 2.0 option.
+- Dart analysis 
+- Flutter outline
+- Debug paint
+- Select widget mode
+- Console
