@@ -7,4 +7,6 @@
 - Center (`child`)
 - alt + enter: shortcut to see with is possible to do
 
-![https://i.imgur.com/tbCnAoS.png](exemple of tree)
+![https://i.imgur.com/tbCnAoS.png](sample of tree)
+
+- Make attention to YAML file, the indentation it is important.
