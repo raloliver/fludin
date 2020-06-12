@@ -8,3 +8,5 @@ The documentaion is our friend.
 - Expanded(): fill the avaliable space. He widget is a similar to a flex layout in a web way.
 
 > Flutter Outline in a Android Studio it is a great tool to improve your productivity.
+
+> Dart Analysis: at Android Studio to show you how methods or props are requireds.
