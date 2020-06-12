@@ -10,3 +10,10 @@ The documentaion is our friend.
 > Flutter Outline in a Android Studio it is a great tool to improve your productivity.
 
 > Dart Analysis: at Android Studio to show you how methods or props are requireds.
+
+
+### DART
+
+- Primitive types: string, number, double and boolean (`List` and `Map`).  
+- `dynamic` type: when you dont declare a value (or informe the type before the name of variable) to a variable.
+- 
