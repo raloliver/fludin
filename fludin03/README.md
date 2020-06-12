@@ -16,4 +16,6 @@ The documentaion is our friend.
 
 - Primitive types: string, number, double and boolean (`List` and `Map`).  
 - `dynamic` type: when you dont declare a value (or informe the type before the name of variable) to a variable.
-- 
+- Avoid use `var` or `dynamic`.
+
+> without `setState()` method the whole app need to be restart.
