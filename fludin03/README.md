@@ -1,16 +1,22 @@
 # fludin03
 
-A new Flutter project.
+The documentaion is our friend.
 
-## Getting Started
+### Everything is a widget
 
-This project is a starting point for a Flutter application.
+- AssetImage(): put a image from image folder. Just specify a string with a image path. Remember: this is a method from prop image in a Image() widget.
+- Expanded(): fill the avaliable space. He widget is a similar to a flex layout in a web way.
 
-A few resources to get you started if this is your first Flutter project:
+> Flutter Outline in a Android Studio it is a great tool to improve your productivity.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+> Dart Analysis: at Android Studio to show you how methods or props are requireds.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+### DART
+
+- Primitive types: string, number, double and boolean (`List` and `Map`).  
+- `dynamic` type: when you dont declare a value (or informe the type before the name of variable) to a variable.
+- Avoid use `var` or `dynamic`.
+- dart:math library if you want to handle with a random number generator.
+
+> without `setState()` method the whole app need to be restart.
