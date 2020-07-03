@@ -9,6 +9,17 @@ class XylophoneApp extends StatelessWidget {
     audioCache.play('note$noteNumber.wav');
   }
 
+  Expanded builderButton({int note, Color color}) {
+    return Expanded(
+      child: FlatButton(
+        onPressed: () {
+          playButton(note);
+        },
+        color: color,
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -18,62 +29,13 @@ class XylophoneApp extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              Expanded(
-                child: FlatButton(
-                  onPressed: () {
-                    playButton(1);
-                  },
-                  color: Colors.lightBlueAccent,
-                ),
-              ),
-              Expanded(
-                child: FlatButton(
-                  onPressed: () {
-                    playButton(2);
-                  },
-                  color: Colors.lightGreenAccent,
-                ),
-              ),
-              Expanded(
-                child: FlatButton(
-                  onPressed: () {
-                    playButton(3);
-                  },
-                  color: Colors.greenAccent,
-                ),
-              ),
-              Expanded(
-                child: FlatButton(
-                  onPressed: () {
-                    playButton(4);
-                  },
-                  color: Colors.yellowAccent,
-                ),
-              ),
-              Expanded(
-                child: FlatButton(
-                  onPressed: () {
-                    playButton(5);
-                  },
-                  color: Colors.orangeAccent,
-                ),
-              ),
-              Expanded(
-                child: FlatButton(
-                  onPressed: () {
-                    playButton(6);
-                  },
-                  color: Colors.redAccent,
-                ),
-              ),
-              Expanded(
-                child: FlatButton(
-                  onPressed: () {
-                    playButton(7);
-                  },
-                  color: Colors.pinkAccent,
-                ),
-              ),
+              builderButton(note: 1, color: Colors.lightBlueAccent),
+              builderButton(note: 2, color: Colors.lightGreenAccent),
+              builderButton(note: 3, color: Colors.greenAccent),
+              builderButton(note: 4, color: Colors.yellowAccent),
+              builderButton(note: 5, color: Colors.orangeAccent),
+              builderButton(note: 6, color: Colors.redAccent),
+              builderButton(note: 7, color: Colors.pinkAccent),
             ],
           ),
         ),
