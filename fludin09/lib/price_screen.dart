@@ -1,3 +1,4 @@
+import 'dart:io' show Platform;
 import 'package:fludin09/coin_data.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
@@ -10,7 +11,7 @@ class PriceScreen extends StatefulWidget {
 class _PriceScreenState extends State<PriceScreen> {
   String selectedCurrency = 'EUR';
 
-  List<DropdownMenuItem> getCurrencies() {
+  DropdownButton<String> getItemMD() {
     List<DropdownMenuItem<String>> items = [];
     for (String currency in currenciesList) {
       var currentCurrency = DropdownMenuItem(
@@ -21,17 +22,37 @@ class _PriceScreenState extends State<PriceScreen> {
       items.add(currentCurrency);
     }
 
-    return items;
+    return DropdownButton<String>(
+      value: selectedCurrency,
+      items: items,
+      onChanged: (value) {
+        setState(() {
+          selectedCurrency = value;
+        });
+      },
+    );
   }
 
-  List<Text> getItems() {
+  CupertinoPicker getItemIOS() {
     // always set a value, and never use null
     List<Text> items = [];
     for (String currency in currenciesList) {
       items.add(Text(currency));
     }
 
-    return items;
+    return CupertinoPicker(
+      itemExtent: 32.0,
+      onSelectedItemChanged: (selected) {},
+      children: items,
+    );
+  }
+
+  Widget defineSO() {
+    if (Platform.isIOS) {
+      return getItemIOS();
+    } else {
+      return getItemMD();
+    }
   }
 
   @override
@@ -70,24 +91,10 @@ class _PriceScreenState extends State<PriceScreen> {
             alignment: Alignment.center,
             padding: EdgeInsets.only(bottom: 30.0),
             color: Colors.blueGrey,
-            child: CupertinoPicker(
-              itemExtent: 32.0,
-              onSelectedItemChanged: (selected) {},
-              children: getItems(),
-            ),
+            child: Platform.isIOS ? getItemIOS() : getItemMD(),
           ),
         ],
       ),
     );
   }
 }
-
-//DropdownButton<String>(
-//value: selectedCurrency,
-//items: getCurrencies(),
-//onChanged: (value) {
-//setState(() {
-//selectedCurrency = value;
-//});
-//},
-//),
