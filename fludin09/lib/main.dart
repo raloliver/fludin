@@ -1,4 +1,4 @@
-    import 'package:fludin09/price_screen.dart';
+import 'package:fludin09/price_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -8,8 +8,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData.dark().copyWith(
-          primaryColor: Colors.lightBlue,
-          scaffoldBackgroundColor: Colors.white),
+        primaryColor: Colors.grey,
+        scaffoldBackgroundColor: Colors.white,
+      ),
       home: PriceScreen(),
       debugShowCheckedModeBanner: false,
     );
