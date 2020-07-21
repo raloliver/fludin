@@ -2,15 +2,8 @@
 
 A new Flutter project.
 
-## Getting Started
+## DropdownButton
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- What type of data dropdown returns?
+- At item prop, you have to use DropdownMenuItem, that has a child.
+- `onChanged`: always when you update a value, use setState().
