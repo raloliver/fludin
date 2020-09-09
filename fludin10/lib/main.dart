@@ -14,7 +14,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.pink,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'Learning Google Flutter for mobile developers'),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
@@ -47,14 +48,40 @@ class _MyHomePageState extends State<MyHomePage> {
         itemCount: _counter,
         itemBuilder: (context, index) {
           return ListTile(
-              leading: Icon(Icons.favorite_border),
-              title: Text('Item'));
+            leading: Icon(Icons.favorite_border),
+            title: Text('Item'),
+            onTap: () {
+              Navigator.push(
+                context, 
+                MaterialPageRoute(builder: (context) => NewPage())
+              );
+            },
+          );
         },
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
-        tooltip: 'Increment',
+        tooltip: 'New item',
         child: Icon(Icons.add),
+      ),
+    );
+  }
+}
+
+class NewPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('New Page'),
+      ),
+      body: Center(
+        child: RaisedButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          child: Text('Go back!'),
+        ),
       ),
     );
   }
