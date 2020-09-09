@@ -76,11 +76,12 @@ class NewPage extends StatelessWidget {
         title: Text('New Page'),
       ),
       body: Center(
-        child: RaisedButton(
+        child: RaisedButton.icon(
           onPressed: () {
             Navigator.pop(context);
           },
-          child: Text('Go back!'),
+          label: Text('Go back!'),
+          icon: Icon(Icons.arrow_back),
         ),
       ),
     );
